@@ -1,0 +1,12 @@
+DateTime today = DateTime.Now;
+Console.WriteLine(today);
+
+DateOnly birthday = DateOnly.Parse("10/09/1997");
+Console.WriteLine(birthday);
+//birthday = DateOnly.Parse("01/01/0001");
+
+Console.WriteLine(birthday.ToString("dddd dd MMMM, yyyy "));
+
+
+
+
