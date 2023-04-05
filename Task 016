@@ -1,0 +1,11 @@
+// See https://aka.ms/new-console-template for more information
+
+//1. Welcome the user
+//2. Ask for the first name of the user
+//3. Dsiplay the first name of the user
+
+
+Console.WriteLine("Welcome to the Project, User!!!");
+Console.WriteLine("Please enter your first name, user.");
+string fname = Console.ReadLine();
+Console.WriteLine($"The first name of the user is {fname}");
