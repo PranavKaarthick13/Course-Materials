@@ -1,0 +1,12 @@
+
+Console.WriteLine("Enter user's age : ");
+
+string? inputAge = Console.ReadLine();
+
+
+int age = int.Parse(inputAge);
+//int.TryParse(inputAge, out age);
+
+Console.WriteLine($"The user is currently {age} years old. They will be {age + 25} years old in 25 years and they were {age - 25} years old 25 years ago.");
+
+
