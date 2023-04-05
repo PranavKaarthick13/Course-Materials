@@ -1,0 +1,18 @@
+//Planning
+
+//Console Application
+
+//Variables to hold Person's
+//Name
+//Age
+//Alive/Dead
+//Phone number
+
+//values need not to be received from user
+
+
+string fullName = "Pranav Kaarthick R";
+int age = 25;
+bool alive = true;
+string phoneNumber = "+91-987-654-3210";
+Console.WriteLine($"The name of the person is {fullName}, who is {age} years old, and it is {alive} that he is alive. His phone number is {phoneNumber}");
