@@ -1,0 +1,21 @@
+using System.Globalization;
+
+DateTime today = DateTime.Now;
+DateTime today2 = DateTime.UtcNow;
+Console.WriteLine(today);
+Console.WriteLine(today2);
+
+
+Console.WriteLine(DateTime.Parse(today.ToString()));
+
+Console.WriteLine(today.ToString("dd/MM/yyyy gg - dddd MMMM  - HH:mm:ss tt    K  zzz"));
+Console.WriteLine(today2.ToString("dd/MM/yyyy gg - dddd MMMM  - HH:mm:ss tt    K  zzz"));
+
+
+//DateTime birthday = DateTime.Parse("10/09/1997");
+DateTime birthday = DateTime.Parse("01/01/0001");
+
+Console.WriteLine(birthday);
+
+DateTime birthday2 = DateTime.ParseExact("10/09/1997", "dd/MM/yyyy", CultureInfo.InvariantCulture);
+Console.WriteLine(birthday2);
