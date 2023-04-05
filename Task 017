@@ -1,0 +1,17 @@
+// See https://aka.ms/new-console-template for more information
+
+//Welcoming the User
+
+Console.WriteLine("Welcome to the Application, User!!!");
+Console.WriteLine("This code was done by Pranav Kaarthick of Mindox Techno India.");
+Console.WriteLine("-----------------------------------------------------");
+
+//ASking for the First name of the user
+Console.WriteLine("Please enter your first name, user.");
+string fname;
+fname = Console.ReadLine();
+
+
+//Greeting the user by his/her name
+Console.WriteLine($"The first name of the user is {fname}");
+Console.WriteLine($"Welcome, {fname}");
