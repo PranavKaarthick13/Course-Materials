@@ -1,0 +1,22 @@
+
+Console.WriteLine("Enter your age");
+
+string? inputAge = Console.ReadLine();
+
+int age = 0;
+
+//age = int.Parse(inputAge);
+bool inputCheck = int.TryParse(inputAge, out age);
+
+Console.WriteLine($"Current age is {age}. Their age after 13 years will be {age + 13}");
+
+Console.WriteLine(inputCheck);
+
+double doubleTestAge = age;
+decimal DecimalTestAge = (decimal)doubleTestAge;
+
+float floatTestAge = age;
+
+
+
+
