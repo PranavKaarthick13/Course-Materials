@@ -1,0 +1,14 @@
+
+
+TimeOnly atNow = TimeOnly.Parse("08:30 AM ");
+
+Console.WriteLine(atNow);
+
+
+TimeOnly rightNow = TimeOnly.FromDateTime(DateTime.Now);
+
+Console.WriteLine(rightNow);
+
+DateOnly today = DateOnly.FromDateTime(DateTime.Now);
+Console.WriteLine(today);
+
