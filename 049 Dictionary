@@ -1,0 +1,29 @@
+
+
+Dictionary<string, string> lookup = new Dictionary<string, string>();
+
+
+lookup["New Zealand"] = "Auckland";
+lookup["The UK"] = "London";
+lookup["The USA"] = "Los Angeles";
+
+Console.WriteLine(lookup["New Zealand"]);
+
+Dictionary<int, string> employee = new Dictionary<int, string>();
+
+employee[0] = "Pranav";
+employee[1] = "Clara";
+employee[2] = "Nicholls";
+
+Console.WriteLine(employee[1]);
+
+Dictionary<string, int> weekDays = new Dictionary<string, int>();
+weekDays["Sunday"] = 1;
+weekDays["Monday"] = 2;
+weekDays["Tuesday"] = 3;
+weekDays["Wednesday"] = 4;
+weekDays["Thursday"] = 5;
+weekDays["Friday"] = 6;
+weekDays["Saturday"] = 7;
+
+Console.WriteLine(weekDays["Wednesday"]);
