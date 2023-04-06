@@ -1,0 +1,33 @@
+
+
+using System.Runtime.ExceptionServices;
+
+string[] firstName = new string[10];
+
+firstName[0] = "Rachel";
+firstName[1] = "Clara";
+firstName[2] = "Tom";
+firstName[3] = "Jill";
+firstName[4] = "Henry";
+firstName[8] = "Kieswetter";
+
+firstName[8] = "Nicholls";
+Console.WriteLine($"Names in array are \n {firstName[0]}\n {firstName[1]}\n {firstName[2]}\n {firstName[3]}\n {firstName[4]}\n {firstName[8]}");
+
+
+
+string csvData = "Alice,Ben,Clara,David,Eurus";
+
+string[] csvData2 = csvData.Split(',');
+
+Console.WriteLine($"\n{csvData2[0]}\n{csvData2[1]}\n{csvData2[2]}\n{csvData2[3]}\n{csvData2[4]}\n");
+
+Console.WriteLine(csvData2.Length);
+
+Console.WriteLine(csvData2[csvData2.Length - 1]);
+
+string[] lastName = new string[] {"Green","Smith", "Latham", "Voth", "Nicholls" };
+
+
+
+
