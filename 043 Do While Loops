@@ -1,0 +1,35 @@
+
+bool ageCheck;
+int age = 0;
+string inputAge;
+
+//if(int.TryParse(inputAge, out int verifyAge))
+//{
+//    age = verifyAge;
+
+//}
+//else
+//{
+//    Console.WriteLine("Please enter valid age.");
+//    return;
+//}
+
+
+do
+{
+    Console.WriteLine("Please enter your age :");
+    inputAge = Console.ReadLine();
+
+    ageCheck = int.TryParse(inputAge, out age);
+
+    if(ageCheck == false )
+    {
+        Console.WriteLine("Invalid Age entered...");
+    }
+
+} while (ageCheck == false);
+
+Console.WriteLine($"Your age is {age}");
+
+
+
