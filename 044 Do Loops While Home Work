@@ -1,0 +1,44 @@
+//Console Application
+
+//ask for the user's name
+
+//welcome Tim as Professor
+
+//everyone else as student
+
+//ask whether user want to continue. 
+
+//If user types exit, then stop.
+
+
+string consent = string.Empty;
+string firstName = string.Empty;
+bool loopConsent = true;
+
+do
+{
+    Console.WriteLine("Enter Your Name : ");
+    firstName = Console.ReadLine();
+
+    if (firstName.ToLower() == "tim" )
+    {
+        Console.WriteLine($"Welcome Professor, {firstName}");
+    }
+    else
+    {
+        Console.WriteLine("Welcome Student");
+    }
+    Console.WriteLine("Do you wish to continue? Enter 'exit' to exit the loop. ");
+    consent = Console.ReadLine();
+
+    if(consent.ToLower()=="exit")
+    {
+        loopConsent = false;
+    }
+
+
+} while (loopConsent==true);
+
+
+
+
