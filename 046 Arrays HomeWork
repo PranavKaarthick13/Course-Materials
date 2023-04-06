@@ -1,0 +1,30 @@
+
+
+string[] firstNames = new string[] { "Jack", "Claire", "Jill" };
+int userChoice = 0;
+Console.WriteLine("Select which name you want to pick among 0,1,2?");
+
+string userInput = Console.ReadLine();
+
+if(int.TryParse(userInput, out int choice))
+{
+    userChoice = choice;
+   switch(choice)
+    {
+        case 0:
+        case 1:
+        case 2:
+            Console.WriteLine(firstNames[userChoice]);
+            break;
+
+        default:
+            Console.WriteLine("Invalid Choice.");
+            break;
+
+    }
+}
+else
+{
+    Console.WriteLine("Wrong Input. Please enter valid input.");
+}
+
