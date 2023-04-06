@@ -1,0 +1,66 @@
+//Console Application
+
+//asks user for name and age
+
+//if name is bob or sue, address them as professor
+
+
+//if age less than 21, ask them to wait until they turn 21
+
+
+
+
+Console.WriteLine("Please enter your name : ");
+string firstName = Console.ReadLine();
+
+Console.WriteLine("Please enter your age : ");
+string InputAge = Console.ReadLine();
+
+ int age = 0;
+
+
+if (int.TryParse(InputAge, out int verifyAge))
+{
+    age = verifyAge;
+    if (age < 0)
+    {
+        Console.WriteLine("Invalid Age. Please run the application again and enter valid age");
+        return;
+    }
+
+    switch (firstName.ToLower())
+    {
+        case "bob" or "sue":
+            Console.WriteLine($"Hello Professor {firstName}");
+            firstName = $"Professor {firstName}";
+            break;
+
+        default:
+            Console.WriteLine($"Welcome {firstName}");
+            break;
+
+    }
+
+    Console.WriteLine("Checking Age Requirements");
+
+    if (age < 21)
+    {
+        Console.WriteLine($"{firstName}, you have to wait {21 - age} years to join the class");
+    }
+    else
+    {
+        Console.WriteLine($"Welcome to the class, {firstName}!!!");
+    }
+
+
+}
+else
+{
+    Console.WriteLine("Please Enter Valid Age.");
+    //return;
+}
+
+
+
+
+
