@@ -1,0 +1,51 @@
+
+Console.WriteLine("Please enter your first name : ");
+string? firstName = Console.ReadLine();
+
+Console.WriteLine("Please enter your middle name : ");
+string? middleName = Console.ReadLine();
+
+Console.WriteLine("PLease enter your last name : ");
+string? lastName = Console.ReadLine();
+
+if ((firstName.ToLower() == "pranav") && (middleName.ToLower() == "kaarthick") && (lastName.ToLower() == "r"))
+{
+    Console.WriteLine("You're the 13. Authentication Successful.");
+}
+else if ((firstName.ToLower() == "pranav") || (middleName.ToLower() == "kaarthick"))
+{
+    Console.WriteLine($" You have a cool name, {firstName} ");
+}
+else if (lastName.ToLower() == "r")
+{
+    Console.WriteLine($"Are you related to Pranav Kaarthick R?");
+}
+else
+{
+    Console.WriteLine($"Sorry, {firstName} {middleName} {lastName}. Kindly wait for your turn.");
+}
+
+
+
+
+int age = 0;
+Console.WriteLine("\n");
+
+Console.WriteLine("Enter your age : ");
+age = int.Parse(Console.ReadLine());
+
+if (age == 25)
+{
+    Console.WriteLine("You're time on Earth is almost up. See you soon. Ciao!!!");
+}
+
+if(age != 33)
+{
+    Console.WriteLine("You and Alexander the Great have different age");
+}
+
+
+
+
+
+
