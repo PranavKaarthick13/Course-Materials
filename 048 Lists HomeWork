@@ -1,0 +1,28 @@
+
+List<string> rooster = new List<string>();
+string nextInput = string.Empty;
+bool consent = true;
+
+
+do
+{
+    Console.WriteLine("Enter a name to add :");
+    string inputName = Console.ReadLine();
+    rooster.Add(inputName);
+
+    Console.WriteLine("Do you want to add another name? If no, enter : ' '");
+    nextInput = Console.ReadLine();
+    if(nextInput==" ")
+    {
+        consent = false;
+    }
+
+} while (consent==true);
+
+
+
+Console.WriteLine(rooster.Count);
+
+
+
+
