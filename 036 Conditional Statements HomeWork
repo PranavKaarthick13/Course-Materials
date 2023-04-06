@@ -1,0 +1,26 @@
+//Planning
+//console application
+
+//asks user for their name
+
+//if name is tim, say welcome professor
+
+//else welcome student
+
+//ps.case sensitive
+
+
+
+
+Console.WriteLine("Enter your name :");
+string firstName = Console.ReadLine();
+
+if (firstName.ToUpper() == "TIM")
+{
+    Console.WriteLine($"Welcome Professor {firstName}.");
+}
+else
+{
+    Console.WriteLine("Welcome Student.");
+}
+
