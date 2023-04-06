@@ -1,0 +1,53 @@
+
+string firstName = string.Empty;
+Console.WriteLine("Please Enter Your First Name");
+firstName = Console.ReadLine();
+
+switch (firstName.ToLower())
+{
+	case "pranav":
+        Console.WriteLine($"Hi {firstName}. Welcome Back!!!");
+        break;
+
+    case "tom":
+    case "henry":
+    case "michael":
+        Console.WriteLine($"Hi {firstName}. Nice to see you again!!!");
+        break;
+
+    case "rachel" or "alice" or "clara":
+        Console.WriteLine($"Hi {firstName}. Happy to work with you again!!!");
+        break;
+
+    case "emily":
+        Console.WriteLine($"Hi {firstName}. Happy to have you with us again!!!");
+        break;
+
+    default:
+        Console.WriteLine($"Authentication Failed. Your credentials are not in the system, {firstName}. You don't have TS/SCI clearence. ");
+		break;
+}
+
+Console.WriteLine("Enter your age :");
+int age = int.Parse( Console.ReadLine() );
+
+switch (age)
+{
+
+    case >= 0 and < 18:
+        Console.WriteLine("You are not old enough to enter. You need a parent or guardian to accompany you.");
+        break;
+
+    case >= 18 and < 35:
+        Console.WriteLine("You are old enough to ride the roller coaster");
+        break;
+
+    case > 35:
+        Console.WriteLine("You are too old to ride.");
+        break;
+
+    default:
+        Console.WriteLine("Enter valid age");
+        break;
+}
+
