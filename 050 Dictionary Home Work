@@ -1,0 +1,16 @@
+
+Dictionary<int,string> employees = new Dictionary<int,string>();
+
+employees[1] = "Pranav";
+employees[2] = "Clara";
+employees[3] = "Nicholls";
+employees[4] = "Rachel";
+employees[5] = "Ross";
+employees[6] = "Alice";
+
+
+Console.WriteLine("Enter the employee id between 1 and 6 :");
+int inputId = int.Parse(Console.ReadLine());
+
+Console.WriteLine(employees[inputId]);
+
