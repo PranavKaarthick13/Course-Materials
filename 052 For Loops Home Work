@@ -1,0 +1,19 @@
+//Console Application
+
+//Ask user for CSV format user names
+//split string into array
+
+//loop through and print names along with hello
+
+
+Console.WriteLine("Enter the names in csv format :");
+string firstNames  = Console.ReadLine();
+
+string[] formattedNames = new string[10];
+
+formattedNames = firstNames.Split(',').ToArray();
+
+for (int i = 0; i < formattedNames.Length; i++)
+{
+    Console.WriteLine($"Hello {formattedNames[i]}");
+}
