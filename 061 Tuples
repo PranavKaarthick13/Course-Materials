@@ -1,0 +1,29 @@
+
+using ConsoleApp2Methods;
+
+
+ConsoleMethods.SayHello("Cortana");
+double[] score = new double[] { 95.45, 95.6, 89.9, 92.4, 99.1 };
+
+//(double,double) totalScore = ConsoleMethods.AddArray(score);
+var totalScore = ConsoleMethods.AddArray(score);
+
+
+Console.WriteLine($"Total : {totalScore.Item1} \t Average : {totalScore.Item2}");
+
+
+(double total, double average) totalScoreNew = ConsoleMethods.AddArray(score);
+
+Console.WriteLine($"Total : {totalScoreNew.total} \t Average : {totalScoreNew.average}");
+
+
+
+(double total, double average) = ConsoleMethods.AddArray(score);
+
+Console.WriteLine($"Total : {total} \t Average : {average}");
+
+
+//Use underScore _ character to ignore unwanted values
+//(double total, _) = ConsoleMethods.AddArray(score);
+
+//Console.WriteLine($"Total : {total} ");
