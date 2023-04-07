@@ -1,0 +1,11 @@
+
+
+string namesList = "Tom,Sherlock,Rachel,Emily,Clara,Alice,Alexa,Cortana";
+
+List<string> names = new List<string>();
+names = namesList.Split(',').ToList();
+
+foreach (string name in names)
+{
+    Console.WriteLine(name);
+}
