@@ -1,0 +1,94 @@
+// Class.cs
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2MiniProject2
+{
+    internal class GuestBook
+    {
+        public static (string guestName, int partySize) GetDetails()
+        {
+            bool detailsCheck = true;
+            Console.WriteLine("Enter the name of the Guest :");
+            string guestName = Console.ReadLine();
+
+            
+            int partySize = 0;
+            
+            do
+            {
+                Console.WriteLine("Enter number of people attending the party with you :");
+                string userInput = Console.ReadLine();
+
+                if (int.TryParse(userInput, out int partyNumber))
+                {
+                    partySize = partyNumber;
+                    detailsCheck = true;
+                }
+                else
+                {
+                    Console.WriteLine("Wrong User Input. Please Enter again.");
+                    detailsCheck = false;
+
+                }
+            } while (detailsCheck==false);
+            return (guestName, partySize);
+            
+        }
+        public static int UpdatedGuestBook()
+        {
+
+
+
+        }
+
+    }
+}
+
+
+
+// Program.cs  
+
+using ConsoleApp2MiniProject2;
+
+bool newGuests = true;
+
+List<string> guests = new List<string>();
+List<int> partyCount = new List<int>();
+int totalGuestAtParty = 0;
+
+Console.WriteLine("Welcome to the Party");
+Console.WriteLine("*************************************************************");
+
+do
+{
+
+    Console.WriteLine("Are there any more guests ? \n If yes, Press 'Enter'. If not, enter 'no' \n .");
+    string nextGuests = Console.ReadLine();
+
+    if (nextGuests.ToLower() =="no")
+    {
+        newGuests = false;
+        break;
+    }
+
+    (string guestName, int partySize) = GuestBook.GetDetails();
+
+    guests.Add(guestName);
+    partyCount.Add(partySize);
+    totalGuestAtParty += partySize;
+
+} while (newGuests==true);
+
+
+foreach (string name in guests)
+{
+    Console.WriteLine($"{name}");
+}
+
+Console.WriteLine($"Total number of people who attended the party : {totalGuestAtParty}");
