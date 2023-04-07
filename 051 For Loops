@@ -1,0 +1,13 @@
+
+string firstNames = "Tim,Tom,Rachel,Clara,ALice,May";
+List<string> names = firstNames.Split(',').ToList();
+
+for(int i = 0; i < names.Count; i++)
+	{
+    Console.WriteLine($"{names[i]} is present right now.");
+
+}
+
+
+
+
