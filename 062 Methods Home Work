@@ -1,0 +1,51 @@
+//class file
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System;
+
+namespace ConsoleApp2MethodsHomeWork
+{
+    internal static class Homework
+    {
+
+        public static void GreetWelcome()
+        {
+            Console.WriteLine("welcome user !!!");
+
+        }
+        public static (string , string) GetUserName()
+        {
+            Console.WriteLine("Enter the firstname :");
+            string firstName = Console.ReadLine();
+
+            Console.WriteLine("Enter Last Name ;");
+            String lastName = Console.ReadLine();
+
+                return (firstName, lastName);
+
+
+        }
+
+        public static void SayHelloUserName(string firstName, string lastName)
+        {
+            Console.WriteLine($"Hello {firstName} {lastName}");
+
+        }
+    }
+}
+
+
+//Program.cs
+
+
+using ConsoleApp2MethodsHomeWork;
+
+Homework.GreetWelcome();
+(string firstName, string lastName) = Homework.GetUserName();
+
+Homework.SayHelloUserName(firstName,lastName);
+
