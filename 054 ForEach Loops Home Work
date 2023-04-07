@@ -1,0 +1,33 @@
+//Console Application
+
+//Ask user for first name
+//continue asking first names until user exits
+//loop through and print names along with hello
+
+List<string> namesList = new List<string>();
+Console.WriteLine("Enter user names as much as you want");
+bool userConsent = true;
+do
+{
+
+	Console.WriteLine("Enter name. If you want to stop, type ' ':");
+	string userInput = Console.ReadLine();
+
+	if (userInput.ToLower() == " " )
+	{
+		userConsent = false;
+		break;
+	}
+
+	namesList.Add(userInput); 
+} while (userConsent==true);
+
+
+foreach (string name in namesList)
+{
+    Console.WriteLine($"hello {name}");
+}
+
+
+
+
